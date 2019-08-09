@@ -1,0 +1,27 @@
+server:
+  port: 8089
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 300
+
+##动态权限配置文件 List<Map<String, String>>
+permission-config:
+  perms:
+    - url: /
+      permission: anon
+    - url: /login
+      permission: anon
+    - url: /loginout
+      permission: anon
+    - url: /static/**
+      permission: anon
+    - url: /js/**
+      permission: anon
+    - url: /login.html
+      permission: anon
+    - url: /**
+      permission: authc

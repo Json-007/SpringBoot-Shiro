@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    用户名：<input type="text" id="username" name="username" ></br>
+    密码：<input type="text" id="password" name="password"></br>
+    <input type="button" id="submit" value="提交">
+</body>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#submit").click(function () {
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        $.ajax({ url: "login",
+            data: {"username":username,"password":password},
+            type: 'POST',
+            dataType: "json",
+            success: function(data){
+                console.log(data);
+                if(data.code = '200'){
+                    location.href='index.html';
+                }else if(data.code = '401'){
+                    alert(data.message);
+                }
+            },error:function(XMLHttpRequest, textStatus, errorThrown){
+                //通常情况下textStatus和errorThrown只有其中一个包含信息
+                if(XMLHttpRequest.responseJSON.code='401'){
+                    alert(XMLHttpRequest.responseJSON.msg);
+                }
+                this;   //调用本次ajax请求时传递的options参数
+            }
+        });
+    })
+</script>
+</html>

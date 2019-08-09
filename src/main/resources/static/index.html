@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    欢迎首页</br></br>
+    <input type="button" id="logout" value="注销">
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#logout").click(function () {
+        $.ajax({ url: "logout",
+            data: {},
+            type: 'GET',
+            dataType: "json",
+            success: function(data){
+                console.log(data);
+                if(data.code = '200'){
+                    location.href='login.html';
+                }
+            }});
+    })
+</script>
+</html>
