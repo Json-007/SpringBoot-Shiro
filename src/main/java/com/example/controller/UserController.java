@@ -1,8 +1,7 @@
-package com.example.demo.controller;
+package com.example.controller;
 
-import com.example.demo.bean.ResponseBean;
+import com.example.bean.ResponseBean;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

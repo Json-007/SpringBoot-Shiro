@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.service;
 
-import com.example.demo.dao.UserMapper;
-import com.example.demo.entity.UserInfo;
+import com.example.dao.UserMapper;
+import com.example.entity.UserInfo;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,6 +1,6 @@
-package com.example.demo.dao;
+package com.example.dao;
 
-import com.example.demo.entity.UserInfo;
+import com.example.entity.UserInfo;
 import org.springframework.stereotype.Repository;
 
 /**

@@ -1,8 +1,8 @@
-package com.example.demo.shiro;
+package com.example.shiro;
 
-import com.example.demo.entity.UserInfo;
-import com.example.demo.service.ResourceServiceImpl;
-import com.example.demo.service.UserServiceImpl;
+import com.example.entity.UserInfo;
+import com.example.service.ResourceServiceImpl;
+import com.example.service.UserServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;

@@ -1,12 +1,9 @@
-package com.example.demo.controller;
+package com.example.controller;
 
-import com.example.demo.bean.ResponseBean;
-import com.example.demo.service.UserServiceImpl;
+import com.example.bean.ResponseBean;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 

@@ -1,6 +1,6 @@
-package com.example.demo.controller;
+package com.example.controller;
 
-import com.example.demo.bean.ResponseBean;
+import com.example.bean.ResponseBean;
 import org.apache.shiro.ShiroException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.http.HttpStatus;

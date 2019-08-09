@@ -1,8 +1,7 @@
-package com.example.demo.shiro;
+package com.example.shiro;
 
-import com.example.demo.bean.PermsMap;
-import com.example.demo.entity.Resource;
-import com.example.demo.service.ResourceServiceImpl;
+import com.example.bean.PermsMap;
+import com.example.service.ResourceServiceImpl;
 import net.sf.ehcache.CacheManager;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
@@ -22,7 +21,6 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.springframework.context.annotation.DependsOn;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
